@@ -68,8 +68,8 @@
         </dependency>
         <dependency>
             <groupId>net.pl3x.bukkit.chatapi</groupId>
-            <artifactId>ChatComponentAPI-v1_11_R1</artifactId>
-            <version>Reflection</version>
+            <artifactId>ChatComponentAPI-Reflection</artifactId>
+            <version>1.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
