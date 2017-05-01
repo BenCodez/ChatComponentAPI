@@ -43,7 +43,14 @@ public class ComponentSender {
             }
         } catch (Exception ignore) {
         }
-        Bukkit.getLogger().info("[ERROR] This plugin is not compatible with this server version (" + version + ").");
+        try {
+        final Class<?> clazz = Class.forName(ComponentSender.class.getPackage().getName() + ".nms.Reflection");
+         if (ChatComponentPacket.class.isAssignableFrom(clazz)) {
+                return (ChatComponentPacket) clazz.getConstructor().newInstance();
+            }
+        } catch (Exception ignore) {
+        }
+         Bukkit.getLogger().info("[ERROR] This plugin is not compatible with this server version (" + version + ").");
         Bukkit.getLogger().info("[ERROR] Could not send chat packet!");
         return null;
     }
