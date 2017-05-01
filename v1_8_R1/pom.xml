@@ -9,18 +9,7 @@
         <groupId>net.pl3x.bukkit.chatapi</groupId>
         <artifactId>ChatComponentAPI-parent</artifactId>
         <version>parent</version>
-    </parent>
-
-    <repositories>
-        <repository>
-            <id>bungee-repo</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
-        </repository>
-    </repositories>
+         </parent>
          
     <dependencies>
         <dependency>
