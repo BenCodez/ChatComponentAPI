@@ -1,32 +1,36 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>net.pl3x.bukkit.chatapi</groupId>
-    <artifactId>ChatComponentAPI-parent</artifactId>
-    <version>parent</version>
-    <packaging>pom</packaging>
+    <artifactId>ChatComponentAPI-v1_13_R1</artifactId>
+    <version>v1_13_R1</version>
+    <packaging>jar</packaging>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <parent>
+        <groupId>net.pl3x.bukkit.chatapi</groupId>
+        <artifactId>ChatComponentAPI-parent</artifactId>
+        <version>parent</version>
+    </parent>
 
-    <modules>
-        <module>API</module>
-        <module>v1_13_R1</module>
-        <module>Reflection</module>
-        <module>Main</module>
-    </modules>
-
-    <repositories>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-        </repository>
-        <repository>
-            <id>bungee-repo</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
-        </repository>
-    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.13-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.md-5</groupId>
+            <artifactId>bungeecord-chat</artifactId>
+            <version>1.13-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.pl3x.bukkit.chatapi</groupId>
+            <artifactId>ChatComponentAPI-api</artifactId>
+            <version>API</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
