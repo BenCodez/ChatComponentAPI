@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>ChatComponentAPI</artifactId>
-    <version>1.2</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -15,55 +15,19 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.11-R0.1-SNAPSHOT</version>
+            <version>1.13-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.md-5</groupId>
             <artifactId>bungeecord-chat</artifactId>
-            <version>1.11-SNAPSHOT</version>
+            <version>1.13-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.pl3x.bukkit.chatapi</groupId>
-            <artifactId>ChatComponentAPI-v1_8_R1</artifactId>
-            <version>v1_8_R1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.pl3x.bukkit.chatapi</groupId>
-            <artifactId>ChatComponentAPI-v1_8_R2</artifactId>
-            <version>v1_8_R2</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.pl3x.bukkit.chatapi</groupId>
-            <artifactId>ChatComponentAPI-v1_8_R3</artifactId>
-            <version>v1_8_R3</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.pl3x.bukkit.chatapi</groupId>
-            <artifactId>ChatComponentAPI-v1_9_R1</artifactId>
-            <version>v1_9_R1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.pl3x.bukkit.chatapi</groupId>
-            <artifactId>ChatComponentAPI-v1_9_R2</artifactId>
-            <version>v1_9_R2</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.pl3x.bukkit.chatapi</groupId>
-            <artifactId>ChatComponentAPI-v1_10_R1</artifactId>
-            <version>v1_10_R1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.pl3x.bukkit.chatapi</groupId>
-            <artifactId>ChatComponentAPI-v1_11_R1</artifactId>
-            <version>v1_11_R1</version>
+            <artifactId>ChatComponentAPI-v1_13_R1</artifactId>
+            <version>v1_13_R1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
